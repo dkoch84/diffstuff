@@ -10,4 +10,4 @@ jobs:
       uses: actions/checkout@v3
     - name: diff
       run: |
-        diff <(cat names1.txt) <(cat names2.txt)
+        diff <(cat names1.txt) <(cat names2.txt) | cat
