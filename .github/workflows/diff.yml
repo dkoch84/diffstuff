@@ -11,3 +11,4 @@ jobs:
     - name: diff
       run: |
         diff <(cat names1.txt) <(cat names2.txt) | cat > temp.diff
+        cat temp.diff | grep bob | cat
